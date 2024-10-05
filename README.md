@@ -1,7 +1,7 @@
 
 # SMS Spam Classifier
 
-This project is a **web-based SMS Spam Classification Application** built using **Flask**. The main goal of the application is to classify SMS messages as *Spam* or *Not Spam* using a machine learning model. The project was developed collaboratively by **Anand Kumar Dubey** and **Debmala Adhikari** from the **MSc Data Science** program.
+This project is a **web-based SMS Spam Classification Application** built using **Flask**. The main goal of the application is to classify SMS messages as *Spam* or *Not Spam* using a machine learning model. The project was developed collaboratively by **Anand Kumar Dubey** and **Debamala Das Adhikari** from the **MSc Data Science** program.
 
 ## Table of Contents
 1. [Overview](#overview)
