@@ -94,7 +94,7 @@ SMS-Spam-Classifier/
 This project was developed by:
 - **Anand Kumar Dubey** - [LinkedIn](https://www.linkedin.com/in/anand-dubey-27ba511b0/)
 
-- **Debmala Adhikari**
+- **Debamala Das Adhikari** - [LinkedIn](https://www.linkedin.com/in/debamala-das-adhikari-085a8730a/)
 
 Both contributors are final-year MSc Data Science students working together on this project to learn more about text classification and Flask web development.
 
