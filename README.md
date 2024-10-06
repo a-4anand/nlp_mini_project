@@ -38,7 +38,7 @@ SMS-Spam-Classifier/
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/SMS-Spam-Classifier.git
+   git clone https://github.com/a-4anand/nlp_mini_project.git
    ```
 
 2. Navigate to the project directory:
