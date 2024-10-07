@@ -60,17 +60,17 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Model Accuracy: {accuracy:.2f}")
-
-# Save the model and vectorizer
-joblib.dump(model, 'spam_classifier_model.pkl')
-joblib.dump(tfidf, 'tfidf_vectorizer.pkl')
+#
+# # # Save the model and vectorizer
+# joblib.dump(model, 'spam_classifier_model.pkl')
+# joblib.dump(tfidf, 'tfidf_vectorizer.pkl')
 
 # Flask app setup
 app = Flask(__name__)
-
-# Load the trained model and vectorizer
-model = joblib.load('spam_classifier_model.pkl')
-tfidf = joblib.load('tfidf_vectorizer.pkl')
+#
+# # Load the trained model and vectorizer
+# model = joblib.load('spam_classifier_model.pkl')
+# tfidf = joblib.load('tfidf_vectorizer.pkl')
 
 # Define the main route
 @app.route('/')
@@ -79,6 +79,7 @@ def home():
 
 # Define the predict route
 @app.route('/predict', methods=['POST'])
+
 def predict():
     if request.method == 'POST':
         message = request.form['message']
@@ -86,8 +87,10 @@ def predict():
         vectorized_message = tfidf.transform([processed_message]).toarray()
         prediction = model.predict(vectorized_message)
         result = "Spam" if prediction == 1 else "Not Spam"
-        return render_template('index.html', prediction_text=f'The message is: {result}')
+        return render_template('index.html',prediction_text=f'The message is: {result}')
 
 # Run the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
+
+
